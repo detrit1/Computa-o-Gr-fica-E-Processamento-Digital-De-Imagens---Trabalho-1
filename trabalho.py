@@ -1218,7 +1218,7 @@ class ImageVideoProcessor:
             if self.sound_playing:
                 self.stop_detection_sound()
             
-            print(f"✅ Detecção finalizada. Frames: {frame_count}, Detecções: {detection_count}")
+            print(f"Detecção finalizada. Frames: {frame_count}, Detecções: {detection_count}")
             self.video_status_var.set("Detecção de microfone finalizada")
         
         # Executar em thread
@@ -1340,3 +1340,4 @@ if __name__ == "__main__":
     root.eval('tk::PlaceWindow . center')
     
     root.mainloop()
+
